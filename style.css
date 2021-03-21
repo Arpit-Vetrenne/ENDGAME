@@ -1,0 +1,551 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ :root {
+    --phone: 0
+}
+
+body {
+    background-image: url("images/Wallpaper/BackG.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.gameContainer {
+    background-image: url("images/Wallpaper/BackG.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 500vh;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero {
+    position: absolute;
+    bottom: 1px;
+    left: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px
+}
+
+#html {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background: url('images/Wallpaper/potrait.jpg');
+}
+
+#h1 {
+    margin-top: 500px;
+    color: rgb(85 176 218);
+    background-image: url('images/Wallpaper/potrait.jpg');
+    font-size: 70px;
+    background-position: center center;
+    text-align: center;
+}
+
+#ironMan {
+    background-image: url("images/characters/ironMan.png");
+    width: 110px;
+}
+
+#thor {
+    background-image: url("images/characters/thor.png");
+    width: 160px;
+}
+
+#spider {
+    background-image: url("images/characters/spider.png");
+    width: 90px;
+}
+
+#captain {
+    background-image: url("images/characters/captain.jpg");
+    width: 120px;
+}
+
+#hulk {
+    background-image: url("images/characters/hulk.png");
+    width: 151px;
+}
+
+#strange {
+    background-image: url("images/characters/strange.png");
+    width: 115px;
+}
+
+#thanos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 1px;
+    left: 1000px;
+}
+
+.thanoo {
+    width: 150px;
+    height: 230px;
+    background-image: url("images/characters/thanose.jpg");
+}
+
+.ronan {
+    width: 150px;
+    height: 230px;
+    background-image: url("images/characters/ronan.png");
+}
+
+.loki {
+    /* width: 190px;
+    height: 252px; */
+    background-image: url("images/characters/loki.png");
+    width: 150px;
+    height: 230px;
+}
+
+.ultron {
+    width: 181px;
+    height: 266px;
+    background-image: url("images/characters/ultron.png");
+}
+
+.animateIronMan {
+    /* display: none; */
+    animation: ironMan 0.6s linear;
+}
+
+@keyframes ironMan {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 300px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.welcome {
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 6vh;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 25%;
+    border-bottom: inset rgba(75, 75, 75, 0.548) 15px;
+}
+
+.animateThanos {
+    animation: thanosAnimation 4.5s linear infinite;
+}
+
+@keyframes thanosAnimation {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -4vw;
+    }
+}
+
+.play {
+    /* box-sizing: border-box; */
+    position: absolute;
+    border-radius: 20px;
+    border-color: black;
+    background: rgba(174, 188, 226, 0.356);
+    width: 85%;
+    animation: fade 2s linear;
+    height: 85%;
+    margin-left: 8%;
+    margin-top: 4.25%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#playbtn {
+    font-size: 2vh;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 30px;
+    border-color: black;
+    background-color: rgb(42, 238, 117);
+    width: 13%;
+    height: 10%;
+    margin-left: 43%;
+    margin-right: 43%;
+    /* margin-top: 39%; */
+    bottom: 5vw;
+}
+
+#playbtn:active {
+    background-color: rgba(0, 196, 26, 0.89);
+}
+
+.score {
+    text-decoration: underline;
+    position: absolute;
+    font-size: 5vh;
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 33%;
+    color: rgb(43, 11, 147);
+}
+
+.highScore {
+    margin-top: 14%;
+    position: absolute;
+    font-size: 3.5vh;
+    margin-left: 42.5%;
+    margin-right: 33%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 219, 58);
+}
+
+#score {
+    color: rgb(2, 236, 236);
+    text-align: end;
+    margin-right: 50px;
+    font-size: 4vh;
+    background: rgba(228, 228, 228, 0.356);
+    text-align: center;
+    border: 2.5px solid red;
+    border-radius: 18px;
+    width: 23vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-self: end;
+    align-content: end;
+    margin-left: 86vw;
+}
+
+#title {
+    color: aquamarine
+}
+
+#mssgs {
+    color: rgb(8, 100, 238);
+    position: absolute;
+    font-size: 6vh;
+    text-align: center;
+    padding-left: 41vw;
+    margin-top: 7%;
+    animation: fade 1s linear;
+}
+
+.gameOver {
+    color: rgb(255, 0, 0);
+    background-color: rgb(94, 75, 75);
+    position: absolute;
+    font-size: 6vh;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 25%;
+}
+
+.displayThanos {
+    position: absolute;
+    display: block;
+    top: 1vw;
+    /* left: 63vw; */
+    height: 89%;
+    right: -8vw;
+}
+
+.displayIronMan {
+    position: absolute;
+    display: block;
+    /* margin-left: 70%; */
+    height: 85%;
+    margin-top: 0.5%;
+}
+
+.rule {
+    text-align: center;
+    cursor: pointer;
+    /* position: absolute; */
+    /* margin-top: 10%; */
+    font-size: 170%;
+    /* margin-left: 28%; */
+    color: rgb(0, 123, 180);
+}
+
+ ::selection {
+    color: rgb(255, 0, 0);
+    background: rgb(94, 75, 75);
+}
+
+.rules {
+    /* position: absolute; */
+    margin-top: 5%;
+    font-size: 120%;
+    font-style: italic;
+    padding: 5%;
+}
+
+.rulesDiv1 {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: justify;
+    position: absolute;
+    margin-top: 15%;
+    font-size: 2vh;
+    margin-left: 27%;
+    width: 20%;
+}
+
+.rulesDiv2 {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    text-align: justify;
+    position: absolute;
+    margin-top: 15%;
+    font-size: 2vh;
+    margin-left: 52%;
+    width: 20%;
+}
+
+.nextA {
+    background-color: aquamarine;
+    height: 0.1px;
+    width: 0.1px;
+    display: none;
+}
+
+.opt {
+    display: none;
+    font-size: 0.1px;
+    height: 0.1px;
+    width: 0.1px;
+}
+
+#next {
+    bottom: 2vw;
+    margin-left: 7%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgb(60, 232, 245);
+    height: 7%;
+    width: 10%;
+    font-size: 1.6vh;
+    border-radius: 10px;
+    border: 2.7px solid navy;
+}
+
+.attack {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    --boi: 1400px;
+}
+
+.ironAttack {
+    bottom: 160px;
+    background-image: url('images/attack/ironAttack.png');
+    height: 15px;
+    width: 100px;
+}
+
+.captainAttack {
+    bottom: 130px;
+    background-image: url('images/attack/captainAttack.png');
+    width: 130px;
+    height: 55px;
+}
+
+#vAttack {
+    --oy: 10;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 80%;
+    --dur: 5s;
+    z-index: 30;
+}
+
+.thanosAttack {
+    bottom: 5px;
+    background-image: url(images/attack/thanosAttack.png);
+    height: 183px;
+    width: 127px;
+}
+
+.lokiAttack {
+    bottom: -5px;
+    background-image: url(images/attack/lokiAttack.png);
+    height: 271px;
+    width: 38px;
+}
+
+.ultronAttack {
+    background-image: url(images/attack/ultronAttack.png);
+    bottom: 160px;
+    height: 15px;
+    width: 100px;
+}
+
+.ronanAttack {
+    bottom: 5px;
+    background-image: url(images/attack/ronanAttack.png);
+    height: 183px;
+    width: 127px;
+}
+
+.thorAttack {
+    bottom: 125px;
+    background-image: url('images/attack/thorAttack.png');
+    height: 55px;
+    width: 110px;
+}
+
+.hulkAttack {
+    bottom: 100px;
+    background-image: url('images/attack/hulkAttack.png');
+    height: 80px;
+    width: 130px;
+}
+
+.strangeAttack {
+    bottom: 10px;
+    background-image: url('images/attack/strangeAttack.png');
+    height: 200px;
+    width: 80px;
+}
+
+.spiderAttack {
+    bottom: 10px;
+    background-image: url('images/attack/spiderAttack.png');
+    height: 250px;
+    width: 80px;
+}
+
+.animateAttack {
+    animation: attackAnimation 2s linear infinite;
+}
+
+.vAnimate {
+    --oy: 100;
+    animation: vAttackAnimation 5s linear infinite;
+    animation-duration: var(--dur);
+    animation-iteration-count: 1
+}
+
+.animateAttackRight {
+    animation: attackAnimationRight 2s linear infinite;
+}
+
+@keyframes vAttackAnimation {
+    1% {
+        left: 98%;
+    }
+    95% {
+        --oy: 100
+    }
+    100% {
+        --oy: 10;
+        left: -99%;
+    }
+}
+
+@keyframes attackAnimation {
+    100% {
+        left: var(--boi);
+    }
+}
+
+@keyframes attackAnimationRight {
+    100% {
+        left: var(--boi)
+    }
+}
+
+.stone {
+    border: 4px solid rgb(216, 180, 22);
+    position: absolute;
+    width: 33vw;
+    margin-top: 0.7vw;
+    margin-left: 0.7vw;
+    height: 4vw;
+    border-radius: 7vw;
+}
+
+.stonimage {
+    display: inline;
+    width: 64px;
+    height: 48px;
+    animation: faded 3s linear;
+    padding: 3px;
+    opacity: 100%;
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+/* Phone Buttons */
+
+.bten {
+    position: absolute;
+    height: 60px;
+    opacity: 1;
+    display: none;
+}
+
+#jump {
+    bottom: 7.5%;
+    left: 5%;
+}
+
+#attackF {
+    opacity: 0.2;
+    bottom: 15%;
+    left: 13%;
+    transition: all 1s ease-in-out;
+}
+
+#left {
+    bottom: 15%;
+    right: 13%;
+}
+
+#right {
+    bottom: 15%;
+    right: 5%;
+}
+
+@media only screen and (max-device-width: 840px) {
+    .bten {
+        display: block;
+        --phone: 1
+    }
+}
